@@ -1,0 +1,29 @@
+//Bootstrap functions and variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+//New Colors
+$primary: #EAAB00;
+$light: #ccc;
+
+//Force it to work on navbar because its stupid
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color: $primary;
+
+$theme-colors: (
+  "primary": $primary,
+  "light": $light
+);
+
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; //Pushes the footer to the bottom of the page
+}
+
+//The rest of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
