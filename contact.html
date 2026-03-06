@@ -61,40 +61,55 @@
 
     <!-- Main Content -->
     <main>
-        <section class="py-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="mb-4">STitle</h2>
-                        <p>Line1</p>
-                        <p>Line2</p>     
-                    </div>
-
-                    <div class="col-md-6">
-                        <aside class="p-4 bg-dark text-light rounded">
-                            <h4>Quick Info</h4>
-                            <ul class="list-unstyled">
-                                <li><strong>Major:</strong> Computer Science</li>
-                                <li><strong>Location:</strong> Moscow, ID</li>
-                            </ul>
-                        </aside>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="mb-4">STitle</h2>
-                        <p>Line1</p>
-                        <p>Line2</p>     
-                    </div>
-
-                    <div class="col-md-4">
-                        <h2 class="mb-4">STitle</h2>
-                        <p>Line1</p>
-                        <p>Line2</p>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="card shadow-sm border-0 bg-light p-4">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label fw-bold">Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Joe Vandal" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label fw-bold">Email Address</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@uidaho.edu" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-bold">Subject</label>
+                            <select class="form-select" id="subject">
+                                <option selected>General Inquiry</option>
+                                <option value="1">Instrument Repair Question</option>
+                                <option value="2">Sound Manager Question</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+                    </form>
                 </div>
             </div>
-        </section>
+
+            <div class="col-lg-6">
+                <h3 class="text-dark mb-3">Location</h3>
+                <div class="ratio ratio-4x3 shadow-sm rounded overflow-hidden mb-4 border border-secondary">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.46337583648!2d-117.0142861234723!3d46.72621457112028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a027964d85e79b%3A0x6b4c6e9196b6537!2sUniversity%20of%20Idaho!5e0!3m2!1sen!2sus!4v1700000000000" 
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="bg-dark text-vandal-silver p-4 rounded shadow-sm">
+                    <h4 class="text-vandal-gold">Contact Info</h4>
+                    <address class="mb-0">
+                        <strong>University of Idaho</strong><br>
+                        875 Perimeter Dr<br>
+                        Moscow, ID 83844<br>
+                        <abbr title="Phone">P:</abbr> (208) 885-6111
+                    </address>
+                </div>
+            </div>
+        </div>
     </main>
     
     <!-- Footer -->
